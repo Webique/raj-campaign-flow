@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'arabic': ['Cairo', 'sans-serif'],
+				'english': ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,10 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'raj-blue': 'hsl(var(--raj-blue))',
+				'raj-blue-light': 'hsl(var(--raj-blue-light))',
+				'raj-gray-light': 'hsl(var(--raj-gray-light))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
