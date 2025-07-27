@@ -51,7 +51,7 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
         submit: "Start Campaign"
       },
       contact: {
-        phone: "+966 55 000 0000",
+        phone: "+966 55 648 3990",
         whatsapp: "WhatsApp",
         website: "rajsaudi.com"
       },
