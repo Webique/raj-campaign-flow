@@ -66,31 +66,7 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
           </Button>
         </div>
 
-        {/* Floating Stats */}
-        <div className="absolute bottom-20 left-0 right-0">
-          <div className="raj-container">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <div className="floating-stat">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">88M</div>
-                <div className="text-sm md:text-base text-muted-foreground">
-                  {lang === 'ar' ? 'مشاهدة' : 'Total Views'}
-                </div>
-              </div>
-              <div className="floating-stat">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">26</div>
-                <div className="text-sm md:text-base text-muted-foreground">
-                  {lang === 'ar' ? 'مؤثر' : 'Influencers'}
-                </div>
-              </div>
-              <div className="floating-stat">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">3.3M</div>
-                <div className="text-sm md:text-base text-muted-foreground">
-                  {lang === 'ar' ? 'متوسط المشاهدات' : 'Avg Views'}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
