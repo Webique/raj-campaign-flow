@@ -1,4 +1,4 @@
-import { Instagram, MessageCircle, Globe } from 'lucide-react';
+import { Instagram, MessageCircle } from 'lucide-react';
 
 interface FooterProps {
   lang: 'ar' | 'en';
@@ -44,21 +44,14 @@ const Footer = ({ lang }: FooterProps) => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://wa.me/966550000000" 
+                href="https://wa.me/966556483990" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center raj-transition-fast"
               >
                 <MessageCircle className="w-5 h-5" />
               </a>
-              <a 
-                href="https://rajsaudi.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center raj-transition-fast"
-              >
-                <Globe className="w-5 h-5" />
-              </a>
+
             </div>
           </div>
 

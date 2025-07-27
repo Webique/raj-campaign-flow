@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MessageCircle, Phone, Instagram, Globe } from 'lucide-react';
+import { MessageCircle, Phone, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 interface ContactSectionProps {
@@ -31,7 +31,7 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
         submit: "ابدأ حملتك"
       },
       contact: {
-        phone: "+966 55 000 0000",
+        phone: "+966 55 648 3990",
         whatsapp: "واتساب",
         website: "rajsaudi.com"
       },
@@ -74,7 +74,7 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/966550000000', '_blank');
+    window.open('https://wa.me/966556483990', '_blank');
   };
 
   return (
@@ -189,15 +189,7 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center">
-                  <Globe className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">{lang === 'ar' ? 'موقع إلكتروني' : 'Website'}</h4>
-                  <p className="opacity-90">{t.contact.website}</p>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
