@@ -33,7 +33,7 @@ const Header = ({ lang, onLanguageChange }: HeaderProps) => {
             <img 
               src="/lovable-uploads/7ecb9e27-98c5-4bbb-8682-f4a788b68fc4.png" 
               alt="Raj Logo" 
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 

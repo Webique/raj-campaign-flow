@@ -18,8 +18,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
 
-    /* Dark Royal Blue Primary */
-    --primary: 218 100% 18%;
+    /* Rich Orange Primary */
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 100%;
 
     /* Light sections */
@@ -29,7 +29,7 @@
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 218 100% 18%;
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -37,19 +37,19 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 96%;
-    --ring: 218 100% 18%;
+    --ring: 25 95% 53%;
 
     /* Raj Custom Variables */
-    --raj-blue: 218 100% 18%;
-    --raj-blue-light: 218 50% 25%;
+    --raj-orange: 25 95% 53%;
+    --raj-orange-light: 25 85% 60%;
     --raj-gray-light: 0 0% 96%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(218 100% 18%), hsl(218 50% 25%));
-    --gradient-overlay: linear-gradient(rgba(0, 31, 92, 0.7), rgba(0, 31, 92, 0.5));
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 85% 60%));
+    --gradient-overlay: linear-gradient(rgba(255, 140, 0, 0.7), rgba(255, 140, 0, 0.5));
     
     /* Shadows */
-    --shadow-luxury: 0 20px 60px -10px hsl(218 100% 18% / 0.3);
+    --shadow-luxury: 0 20px 60px -10px hsl(25 95% 53% / 0.3);
     --shadow-card: 0 10px 30px -5px hsl(0 0% 0% / 0.1);
     
     /* Animations */
