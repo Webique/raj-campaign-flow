@@ -66,8 +66,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				'raj-blue': 'hsl(var(--raj-blue))',
 				'raj-orange': 'hsl(var(--raj-orange))',
-				'raj-orange-light': 'hsl(var(--raj-orange-light))',
+				'raj-teal': 'hsl(var(--raj-teal))',
 				'raj-gray-light': 'hsl(var(--raj-gray-light))'
 			},
 			borderRadius: {

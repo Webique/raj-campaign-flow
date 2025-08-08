@@ -72,16 +72,18 @@ const WhyChooseSection = ({ lang }: WhyChooseSectionProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {t.cards.map((card, index) => {
             const IconComponent = card.icon;
+            const colors = ['raj-blue', 'raj-orange', 'raj-teal', 'raj-blue'];
+            const currentColor = colors[index % colors.length];
             return (
               <div 
                 key={index}
                 className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl raj-transition text-center group animate-fade-up"
                 style={{ animationDelay: `${0.2 * index}s` }}
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 raj-transition">
-                  <IconComponent className="w-8 h-8 text-primary group-hover:text-white raj-transition" />
+                <div className={`w-16 h-16 bg-${currentColor}/10 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:bg-${currentColor} group-hover:scale-110 raj-transition`}>
+                  <IconComponent className={`w-8 h-8 text-${currentColor} group-hover:text-white raj-transition`} />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">
+                <h3 className={`text-xl font-bold text-${currentColor} mb-4`}>
                   {card.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

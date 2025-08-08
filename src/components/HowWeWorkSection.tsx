@@ -58,25 +58,29 @@ const HowWeWorkSection = ({ lang }: HowWeWorkSectionProps) => {
 
         <div className="max-w-4xl mx-auto">
           <div className="grid gap-6">
-            {t.steps.map((step, index) => (
-              <div 
-                key={index}
-                className="flex items-start gap-4 p-6 bg-card rounded-2xl shadow-sm hover:shadow-md raj-transition-fast animate-fade-up"
-                style={{ animationDelay: `${0.1 * index}s` }}
-              >
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
-                    {index + 1}
+            {t.steps.map((step, index) => {
+              const colors = ['raj-blue', 'raj-orange', 'raj-teal'];
+              const currentColor = colors[index % colors.length];
+              return (
+                <div 
+                  key={index}
+                  className="flex items-start gap-4 p-6 bg-card rounded-2xl shadow-sm hover:shadow-md raj-transition-fast animate-fade-up"
+                  style={{ animationDelay: `${0.1 * index}s` }}
+                >
+                  <div className="flex-shrink-0">
+                    <div className={`w-8 h-8 bg-${currentColor} rounded-full flex items-center justify-center text-white font-bold text-sm`}>
+                      {index + 1}
+                    </div>
                   </div>
+                  <div className="flex-1">
+                    <p className="text-lg font-medium text-foreground">
+                      {step}
+                    </p>
+                  </div>
+                  <CheckCircle className={`w-6 h-6 text-${currentColor} flex-shrink-0`} />
                 </div>
-                <div className="flex-1">
-                  <p className="text-lg font-medium text-foreground">
-                    {step}
-                  </p>
-                </div>
-                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

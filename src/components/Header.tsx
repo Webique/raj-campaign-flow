@@ -44,7 +44,7 @@ const Header = ({ lang, onLanguageChange }: HeaderProps) => {
               onClick={scrollToContact}
               className={`font-semibold ${
                 isScrolled 
-                  ? 'bg-primary text-white hover:bg-primary/90' 
+                  ? 'bg-raj-orange text-white hover:bg-raj-orange/90' 
                   : 'bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm'
               }`}
             >

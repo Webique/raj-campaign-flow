@@ -59,7 +59,7 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
           <Button 
             onClick={scrollToContact}
             size="lg"
-            className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-6 text-lg animate-fade-up"
+            className="bg-raj-orange text-white hover:bg-raj-orange/90 font-semibold px-8 py-6 text-lg animate-fade-up"
             style={{ animationDelay: '0.4s' }}
           >
             {t.cta}

@@ -31,10 +31,10 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
         {/* Visual Elements */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className="text-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <div className="w-20 h-20 bg-primary rounded-2xl mx-auto mb-6 flex items-center justify-center">
+            <div className="w-20 h-20 bg-raj-blue rounded-2xl mx-auto mb-6 flex items-center justify-center">
               <div className="w-8 h-8 bg-white rounded-full"></div>
             </div>
-            <h3 className="text-xl font-semibold mb-3">
+            <h3 className="text-xl font-semibold mb-3 text-raj-blue">
               {lang === 'ar' ? 'هوية العلامة' : 'Brand Identity'}
             </h3>
             <p className="text-muted-foreground">
@@ -43,10 +43,10 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
           </div>
           
           <div className="text-center animate-fade-up" style={{ animationDelay: '0.6s' }}>
-            <div className="w-20 h-20 bg-primary rounded-2xl mx-auto mb-6 flex items-center justify-center">
+            <div className="w-20 h-20 bg-raj-orange rounded-2xl mx-auto mb-6 flex items-center justify-center">
               <div className="w-8 h-8 bg-white rounded-full"></div>
             </div>
-            <h3 className="text-xl font-semibold mb-3">
+            <h3 className="text-xl font-semibold mb-3 text-raj-orange">
               {lang === 'ar' ? 'استراتيجية المحتوى' : 'Content Strategy'}
             </h3>
             <p className="text-muted-foreground">
@@ -55,10 +55,10 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
           </div>
           
           <div className="text-center animate-fade-up" style={{ animationDelay: '0.8s' }}>
-            <div className="w-20 h-20 bg-primary rounded-2xl mx-auto mb-6 flex items-center justify-center">
+            <div className="w-20 h-20 bg-raj-teal rounded-2xl mx-auto mb-6 flex items-center justify-center">
               <div className="w-8 h-8 bg-white rounded-full"></div>
             </div>
-            <h3 className="text-xl font-semibold mb-3">
+            <h3 className="text-xl font-semibold mb-3 text-raj-teal">
               {lang === 'ar' ? 'تنفيذ الحملات' : 'Campaign Execution'}
             </h3>
             <p className="text-muted-foreground">

@@ -52,7 +52,7 @@ const SuccessStorySection = ({ lang }: SuccessStorySectionProps) => {
     <section className="py-20 bg-background">
       <div className={`raj-container ${lang === 'ar' ? 'rtl font-arabic' : 'ltr font-english'}`}>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-8 animate-fade-up">
+          <h2 className="text-3xl md:text-5xl font-bold text-raj-blue mb-8 animate-fade-up">
             {t.title}
           </h2>
         </div>
@@ -61,22 +61,22 @@ const SuccessStorySection = ({ lang }: SuccessStorySectionProps) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Campaign Video/Image */}
             <div className="animate-fade-up">
-              <div className="relative bg-gradient-to-br from-primary to-primary/80 rounded-3xl overflow-hidden shadow-2xl">
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/40 flex items-center justify-center">
+              <div className="relative bg-gradient-to-br from-raj-blue to-raj-orange rounded-3xl overflow-hidden shadow-2xl">
+                <div className="aspect-video bg-gradient-to-br from-raj-blue/20 to-raj-orange/40 flex items-center justify-center">
                   <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white border-white/30">
                     <Play className="w-6 h-6 mr-2" />
                     {t.watchButton}
                   </Button>
                 </div>
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span className="text-primary font-semibold text-sm">{t.campaign}</span>
+                  <span className="text-raj-blue font-semibold text-sm">{t.campaign}</span>
                 </div>
               </div>
             </div>
 
             {/* Campaign Details */}
             <div className="animate-slide-right">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-raj-teal mb-6">
                 {t.campaign}
               </h3>
               <p className="text-lg text-foreground/80 leading-relaxed mb-8">
@@ -87,12 +87,14 @@ const SuccessStorySection = ({ lang }: SuccessStorySectionProps) => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                 {stats.map((stat, index) => {
                   const IconComponent = stat.icon;
+                  const colors = ['raj-blue', 'raj-orange', 'raj-teal'];
+                  const currentColor = colors[index % colors.length];
                   return (
                     <div key={index} className="text-center">
-                      <div className="w-12 h-12 bg-primary/10 rounded-2xl mx-auto mb-3 flex items-center justify-center">
-                        <IconComponent className="w-6 h-6 text-primary" />
+                      <div className={`w-12 h-12 bg-${currentColor}/10 rounded-2xl mx-auto mb-3 flex items-center justify-center`}>
+                        <IconComponent className={`w-6 h-6 text-${currentColor}`} />
                       </div>
-                      <div className="text-2xl font-bold text-primary mb-1">{stat.value}</div>
+                      <div className={`text-2xl font-bold text-${currentColor} mb-1`}>{stat.value}</div>
                       <div className="text-sm text-muted-foreground">{stat.label}</div>
                     </div>
                   );

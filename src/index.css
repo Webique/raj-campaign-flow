@@ -18,8 +18,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
 
-    /* Rich Orange Primary */
-    --primary: 25 95% 53%;
+    /* Dark Blue Primary */
+    --primary: 218 100% 20%;
     --primary-foreground: 0 0% 100%;
 
     /* Light sections */
@@ -29,7 +29,7 @@
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 25 95% 53%;
+    --accent: 25 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -37,19 +37,20 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 96%;
-    --ring: 25 95% 53%;
+    --ring: 218 100% 20%;
 
     /* Raj Custom Variables */
-    --raj-orange: 25 95% 53%;
-    --raj-orange-light: 25 85% 60%;
+    --raj-blue: 218 100% 20%;
+    --raj-orange: 25 100% 50%;
+    --raj-teal: 175 50% 50%;
     --raj-gray-light: 0 0% 96%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 85% 60%));
-    --gradient-overlay: linear-gradient(rgba(255, 140, 0, 0.7), rgba(255, 140, 0, 0.5));
+    --gradient-primary: linear-gradient(135deg, hsl(218 100% 20%), hsl(25 100% 50%));
+    --gradient-overlay: linear-gradient(rgba(3, 21, 97, 0.8), rgba(255, 115, 0, 0.6));
     
     /* Shadows */
-    --shadow-luxury: 0 20px 60px -10px hsl(25 95% 53% / 0.3);
+    --shadow-luxury: 0 20px 60px -10px hsl(218 100% 20% / 0.3);
     --shadow-card: 0 10px 30px -5px hsl(0 0% 0% / 0.1);
     
     /* Animations */
@@ -166,6 +167,43 @@
   /* Hero video overlay */
   .hero-overlay {
     background: var(--gradient-overlay);
+  }
+  
+  /* Color utility classes */
+  .text-raj-blue {
+    color: hsl(var(--raj-blue));
+  }
+  
+  .text-raj-orange {
+    color: hsl(var(--raj-orange));
+  }
+  
+  .text-raj-teal {
+    color: hsl(var(--raj-teal));
+  }
+  
+  .bg-raj-blue {
+    background-color: hsl(var(--raj-blue));
+  }
+  
+  .bg-raj-orange {
+    background-color: hsl(var(--raj-orange));
+  }
+  
+  .bg-raj-teal {
+    background-color: hsl(var(--raj-teal));
+  }
+  
+  .border-raj-blue {
+    border-color: hsl(var(--raj-blue));
+  }
+  
+  .border-raj-orange {
+    border-color: hsl(var(--raj-orange));
+  }
+  
+  .border-raj-teal {
+    border-color: hsl(var(--raj-teal));
   }
   
   /* Animated stats */

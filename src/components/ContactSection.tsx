@@ -46,7 +46,7 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-primary text-white">
+    <section id="contact" className="py-20 bg-raj-orange text-white">
       <div className={`raj-container ${lang === 'ar' ? 'rtl font-arabic' : 'ltr font-english'}`}>
         {/* CTA Header */}
         <div className="text-center mb-16">
