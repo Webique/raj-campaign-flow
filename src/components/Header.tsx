@@ -39,7 +39,7 @@ const Header = ({ lang, onLanguageChange }: HeaderProps) => {
 
           {/* Navigation & Controls */}
           <div className="flex items-center gap-4">
-            <LanguageToggle currentLang={lang} onLanguageChange={onLanguageChange} />
+            <LanguageToggle currentLang={lang} onLanguageChange={onLanguageChange} isScrolled={isScrolled} />
             <Button
               onClick={scrollToContact}
               className={`font-semibold ${
