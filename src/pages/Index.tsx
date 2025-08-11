@@ -10,7 +10,7 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
-  const [lang, setLang] = useState<'ar' | 'en'>('en');
+  const [lang, setLang] = useState<'ar' | 'en'>('ar');
 
   // Apply RTL/LTR to document
   useEffect(() => {
