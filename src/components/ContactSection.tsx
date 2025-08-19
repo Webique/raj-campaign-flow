@@ -13,7 +13,7 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
   const content = {
     ar: {
       title: "تبغى تطلق حملة لها صوت؟",
-      subtitle: "خل راج يمسكها لك من الألف للياء",
+      subtitle: "خل راج يطلع لك الأفكار، يضع الاستراتيجية، وينفذ الحملة مع المؤثرين",
       contact: {
         phone: "+966 55 648 3990",
         whatsapp: "واتساب",
@@ -26,7 +26,7 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
     },
     en: {
       title: "Want to launch a campaign that makes noise?",
-      subtitle: "Let Raj handle it from A to Z",
+      subtitle: "Let Raj generate ideas, create strategy, and execute your campaign with influencers",
       contact: {
         phone: "+966 55 648 3990",
         whatsapp: "WhatsApp",

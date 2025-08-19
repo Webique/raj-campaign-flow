@@ -9,7 +9,7 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
   const content = {
     ar: {
       headline: "رواج حملتك يبدأ من راج",
-      subheading: "نحكي قصة، نخلق شعور، ونوصل فكرتك بالطريقة الصح",
+      subheading: "نحكي قصة، نخلق شعور، وننفذ حملتك الإعلانية بالطريقة الصح",
       cta: "ابدأ حملتك الآن",
       stats: {
         views: "88 مليون مشاهدة",
@@ -19,7 +19,7 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
     },
     en: {
       headline: "The success of your campaign starts with Raj",
-      subheading: "We tell stories, create emotions, and deliver your idea the right way",
+      subheading: "We tell stories, create emotions, and execute your advertising campaign the right way",
       cta: "Start Your Campaign Now",
       stats: {
         views: "88M Total Views",
@@ -66,7 +66,27 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
           </Button>
         </div>
 
-        
+        {/* Stats */}
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: '0.6s' }}>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold mb-2">{t.stats.views}</div>
+            <div className="text-white/80 text-sm">
+              {lang === 'ar' ? 'إجمالي المشاهدات' : 'Total Views'}
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold mb-2">{t.stats.influencers}</div>
+            <div className="text-white/80 text-sm">
+              {lang === 'ar' ? 'مؤثر' : 'Influencers'}
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold mb-2">{t.stats.avgViews}</div>
+            <div className="text-white/80 text-sm">
+              {lang === 'ar' ? 'متوسط المشاهدات' : 'Avg Views'}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

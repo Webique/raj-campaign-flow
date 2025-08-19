@@ -1,3 +1,5 @@
+import { Heart, Lightbulb, Users } from 'lucide-react';
+
 interface AboutSectionProps {
   lang: 'ar' | 'en';
 }
@@ -5,12 +7,12 @@ interface AboutSectionProps {
 const AboutSection = ({ lang }: AboutSectionProps) => {
   const content = {
     ar: {
-      title: "نعيش مع براندك من أول لحظة",
-      description: "نبدأ من الاسم، الشكل، الألوان، والتغليف… ونوصل لمرحلة كيف يشوفك العميل ويتقبلك ويحبك. هدفنا دائمًا خلق قصة وشعور يخلي الناس تتكلم عنك."
+      title: "نطور براندك من خلال الحملات الإعلانية",
+      description: "نبدأ من فهم فكرتك، نطورها ونحسنها، ثم ننفذ حملات إعلانية قوية تتضمن المؤثرين. هدفنا خلق قصة وشعور يخلي الناس تتكلم عنك."
     },
     en: {
-      title: "We Live With Your Brand From Day One",
-      description: "We handle everything – from naming, design, colors, and packaging – to ensuring customers see, accept, and love your brand. Our mission? To create a story and emotion that gets people talking."
+      title: "We Develop Your Brand Through Advertising Campaigns",
+      description: "We start by understanding your idea, develop and improve it, then execute powerful advertising campaigns including influencers. Our mission? To create a story and emotion that gets people talking."
     }
   };
 
@@ -32,37 +34,37 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className="text-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <div className="w-20 h-20 bg-raj-blue rounded-2xl mx-auto mb-6 flex items-center justify-center">
-              <div className="w-8 h-8 bg-white rounded-full"></div>
+              <Lightbulb className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-3 text-raj-blue">
-              {lang === 'ar' ? 'هوية العلامة' : 'Brand Identity'}
+              {lang === 'ar' ? 'مفهوم العلامة' : 'Brand Concept'}
             </h3>
             <p className="text-muted-foreground">
-              {lang === 'ar' ? 'تصميم شامل يعكس شخصية براندك' : 'Complete design that reflects your brand personality'}
+              {lang === 'ar' ? 'نفهم فكرتك ونطورها لتعكس شخصية براندك' : 'We understand your idea and develop it to reflect your brand personality'}
             </p>
           </div>
           
           <div className="text-center animate-fade-up" style={{ animationDelay: '0.6s' }}>
             <div className="w-20 h-20 bg-raj-orange rounded-2xl mx-auto mb-6 flex items-center justify-center">
-              <div className="w-8 h-8 bg-white rounded-full"></div>
+              <Heart className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-3 text-raj-orange">
-              {lang === 'ar' ? 'استراتيجية المحتوى' : 'Content Strategy'}
+              {lang === 'ar' ? 'الفكرة وتحسينها' : 'Idea & Enhancement'}
             </h3>
             <p className="text-muted-foreground">
-              {lang === 'ar' ? 'محتوى يلامس مشاعر جمهورك' : 'Content that touches your audience emotions'}
+              {lang === 'ar' ? 'نحسن فكرتك لتلامس مشاعر جمهورك' : 'We enhance your idea to touch your audience emotions'}
             </p>
           </div>
           
           <div className="text-center animate-fade-up" style={{ animationDelay: '0.8s' }}>
             <div className="w-20 h-20 bg-raj-teal rounded-2xl mx-auto mb-6 flex items-center justify-center">
-              <div className="w-8 h-8 bg-white rounded-full"></div>
+              <Users className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-3 text-raj-teal">
-              {lang === 'ar' ? 'تنفيذ الحملات' : 'Campaign Execution'}
+              {lang === 'ar' ? 'الحملات والمؤثرين' : 'Campaigns & Influencers'}
             </h3>
             <p className="text-muted-foreground">
-              {lang === 'ar' ? 'تنفيذ احترافي يحقق النتائج' : 'Professional execution that delivers results'}
+              {lang === 'ar' ? 'ننفذ الحملات ونختار المؤثر الأنسب' : 'We execute campaigns and choose the right influencer'}
             </p>
           </div>
         </div>
