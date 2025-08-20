@@ -8,11 +8,13 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
   const content = {
     ar: {
       title: "نطور براندك من خلال الحملات الإعلانية",
-      description: "نبدأ من فهم فكرتك، نطورها ونحسنها، ثم ننفذ حملات إعلانية قوية تتضمن المؤثرين. هدفنا خلق قصة وشعور يخلي الناس تتكلم عنك."
+      description: "نبدأ من فهم فكرتك، نطورها ونحسنها، ثم ننفذ حملات إعلانية قوية تتضمن المؤثرين. هدفنا خلق قصة وشعور يخلي الناس تتكلم عنك.",
+      perspective: "ان حنا ننظر بنظرة العميل + نوصل للفكرة اللي ترغّب العميل بالشراء بنسبة ١٠٠٪"
     },
     en: {
       title: "We Develop Your Brand Through Advertising Campaigns",
-      description: "We start by understanding your idea, develop and improve it, then execute powerful advertising campaigns including influencers. Our mission? To create a story and emotion that gets people talking."
+      description: "We start by understanding your idea, develop and improve it, then execute powerful advertising campaigns including influencers. Our mission? To create a story and emotion that gets people talking.",
+      perspective: "Here, we look from the customer's perspective + we convey the idea that makes the customer 100% inclined to buy."
     }
   };
 
@@ -27,6 +29,9 @@ const AboutSection = ({ lang }: AboutSectionProps) => {
           </h2>
           <p className="text-lg md:text-xl text-foreground/80 leading-relaxed animate-fade-up" style={{ animationDelay: '0.2s' }}>
             {t.description}
+          </p>
+          <p className="text-lg md:text-xl text-foreground/90 leading-relaxed animate-fade-up font-semibold mt-6" style={{ animationDelay: '0.3s' }}>
+            {t.perspective}
           </p>
         </div>
         

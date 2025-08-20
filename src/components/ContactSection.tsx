@@ -45,6 +45,14 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
     window.open('https://wa.me/966556483990', '_blank');
   };
 
+  const openPhone = () => {
+    window.open('tel:+966556483990', '_blank');
+  };
+
+  const openInstagram = () => {
+    window.open('https://instagram.com/rajsaudi', '_blank');
+  };
+
   return (
     <section id="contact" className="py-20 bg-raj-orange text-white">
       <div className={`raj-container ${lang === 'ar' ? 'rtl font-arabic' : 'ltr font-english'}`}>
@@ -82,7 +90,10 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
           <div className="animate-slide-right">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center">
+                <div 
+                  className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center cursor-pointer hover:bg-white/30 transition-colors"
+                  onClick={openPhone}
+                >
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
@@ -92,7 +103,10 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center">
+                <div 
+                  className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center cursor-pointer hover:bg-white/30 transition-colors"
+                  onClick={openWhatsApp}
+                >
                   <MessageCircle className="w-6 h-6" />
                 </div>
                 <div>
@@ -102,7 +116,10 @@ const ContactSection = ({ lang }: ContactSectionProps) => {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center">
+                <div 
+                  className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center cursor-pointer hover:bg-white/30 transition-colors"
+                  onClick={openInstagram}
+                >
                   <Instagram className="w-6 h-6" />
                 </div>
                 <div>
