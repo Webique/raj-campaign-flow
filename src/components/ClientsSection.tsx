@@ -65,7 +65,7 @@ const ClientsSection = ({ lang }: ClientsSectionProps) => {
               <div className="w-16 h-16 bg-raj-teal/10 rounded-2xl mx-auto mb-4 flex items-center justify-center">
                 <Users className="w-8 h-8 text-raj-teal" />
               </div>
-              <div className="text-3xl font-bold text-raj-teal mb-2">50M+</div>
+              <div className="text-3xl font-bold text-raj-teal mb-2">500M+</div>
               <div className="text-muted-foreground">{t.stats.reach}</div>
             </div>
           </div>
