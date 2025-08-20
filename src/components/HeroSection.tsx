@@ -10,11 +10,13 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
     ar: {
       headline: "رواج حملتك يبدأ من راج",
       subheading: "نحكي قصة، نخلق شعور، وننفذ حملتك الإعلانية",
+      description: "نحن مسؤولون عن إضفاء الشهرة على فكرتك، وقد أصبحنا معروفين بأفكارنا العميقة والإبداعية",
       cta: "ابدأ حملتك الآن"
     },
     en: {
       headline: "The success of your campaign starts with Raj",
       subheading: "We tell stories, create emotions, and execute your advertising campaign",
+      description: "We are responsible for giving your idea popularity, and we've become known for our deep and creative ideas",
       cta: "Start Your Campaign Now"
     }
   };
@@ -43,8 +45,11 @@ const HeroSection = ({ lang }: HeroSectionProps) => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 animate-fade-up">
             {t.headline}
           </h1>
-          <p className="text-xl md:text-2xl mb-12 opacity-90 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             {t.subheading}
+          </p>
+          <p className="text-lg md:text-xl mb-12 opacity-80 animate-fade-up leading-relaxed max-w-2xl mx-auto" style={{ animationDelay: '0.3s' }}>
+            {t.description}
           </p>
           <Button 
             onClick={scrollToContact}
