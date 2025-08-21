@@ -21,7 +21,8 @@ const HowWeWorkSection = ({ lang }: HowWeWorkSectionProps) => {
         "نبدأ التنفيذ بعد موافقتك",
         "نتابع الحملة ميدانيًا لحظة بلحظة",
         "نقدم تقرير مفصل بعد الحملة"
-      ]
+      ],
+      philosophy: "نؤمن أن الأعمال العظيمة تولد حيث يلتقي الإبداع بالإتقان. منّا ينبع الابتكار — أفكار تتحدى المألوف وتفتح آفاقًا جديدة. ومعكم تتحول هذه الأفكار إلى واقع يحمل قيمة وأثرًا دائمًا. معًا نحوّل الرؤى إلى تأثير ملموس."
     },
     en: {
       title: "How We Work",
@@ -38,7 +39,8 @@ const HowWeWorkSection = ({ lang }: HowWeWorkSectionProps) => {
         "Launch after your approval",
         "Monitor & manage on-ground",
         "Deliver a detailed post-campaign report"
-      ]
+      ],
+      philosophy: "We believe that great work is born where creativity meets excellence. From us comes innovation — ideas that challenge the expected and open new possibilities. With you, these ideas evolve into meaningful realities that leave a lasting mark. Together, we shape visions into impact."
     }
   };
 
@@ -107,6 +109,17 @@ const HowWeWorkSection = ({ lang }: HowWeWorkSectionProps) => {
               <span className="text-sm font-medium text-muted-foreground">
                 {lang === 'ar' ? 'التنفيذ' : 'Execution'}
               </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Philosophy Section */}
+        <div className="mt-20 text-center animate-fade-up" style={{ animationDelay: '0.8s' }}>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-raj-blue/5 via-raj-orange/5 to-raj-teal/5 rounded-3xl p-8 md:p-12 border border-border/20">
+              <p className="text-lg md:text-xl text-foreground/90 leading-relaxed font-medium">
+                {t.philosophy}
+              </p>
             </div>
           </div>
         </div>
